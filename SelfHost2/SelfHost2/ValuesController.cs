@@ -9,7 +9,7 @@ namespace SelfHost2
 {
     public class ValuesController : ApiController
     {
-        string[] list = new string[] { "value1", "value2", "bugga" };
+        string[] list = new string[] { "value1", "value2" };
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
