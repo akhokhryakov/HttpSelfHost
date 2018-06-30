@@ -9,7 +9,7 @@ namespace SelfHost2
 {
     public class ValuesController : ApiController
     {
-        string[] stringArray = new string[] { "value1", "value2" };
+        string[] stringArray = new string[] { "value1", "value2" , "bugaga"};
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
@@ -29,6 +29,7 @@ namespace SelfHost2
                     return true;
                 case 2: stringArray[1] = value;
                     return true;
+                case 3: stringArray[2] = value; return true;
                 default: throw  new IndexOutOfRangeException("list");
             }
         }
