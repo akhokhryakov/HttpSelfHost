@@ -12,7 +12,7 @@ namespace SelfHost2
         string[] stringArray = new string[] { "value1", "value2" , "bugaga"};
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return stringArray;
         }
 
         // GET api/values/5 
